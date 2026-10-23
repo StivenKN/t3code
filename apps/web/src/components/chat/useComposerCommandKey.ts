@@ -204,7 +204,6 @@ export function useComposerCommandKey(input: {
       composerMenuOpenRef.current = false;
       return true;
     }
-    // Plain Enter belongs to the open menu; the other send bindings bypass it.
     const plainSendIntent = composerDefaultSendIntent({
       isDraftThread: routeKind === "draft",
       startNewThreadsInBackground,

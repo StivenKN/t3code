@@ -441,7 +441,6 @@ export const ClientSettingsSchema = Schema.Struct({
   followUpBehavior: Schema.Literals(["queue", "steer"]).pipe(
     Schema.withDecodingDefault(Effect.succeed("queue")),
   ),
-  // Swaps plain send and the Start in Background binding in a new thread.
   startNewThreadsInBackground: Schema.Boolean.pipe(
     Schema.withDecodingDefault(Effect.succeed(false)),
   ),
